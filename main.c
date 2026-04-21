@@ -1,6 +1,7 @@
-
+/*
 Name: SANYU DORCUS 
 Registration Number: 25/U/BIE/01420/PE
+*/
 
  #include <stdio.h>
 
