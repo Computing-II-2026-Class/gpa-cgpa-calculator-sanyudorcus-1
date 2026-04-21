@@ -5,8 +5,21 @@ Registration Number: 25/U/BIE/01420/PE
  #include <stdio.h>
 
 /* --- FUNCTION PROTOTYPES --- */
-float getGradePoint(float score);
-char* getGrade(float score);
+float getGradePoint(float score) {
+    if (score >= 80) return 5.0;
+    if (score >= 70) return 4.0;
+    if (score >= 60) return 3.0;
+    if (score >= 50) return 2.0;
+    return 0.0;
+}
+
+char* getGrade(float score) {
+    if (score >= 80) return "A";
+    if (score >= 70) return "B";
+    if (score >= 60) return "C";
+    if (score >= 50) return "D";
+    return "F";
+}
 
 int main() {
     // Exact Course Codes from curriculum
@@ -94,19 +107,5 @@ int main() {
 /* --- FUNCTION DEFINITIONS --- */
 
 // Logic based on required Grading Scale
-float getGradePoint(float score) {
-    if (score >= 80) return 5.0;
-    if (score >= 70) return 4.0;
-    if (score >= 60) return 3.0;
-    if (score >= 50) return 2.0;
-    return 0.0;
-}
 
-char* getGrade(float score) {
-    if (score >= 80) return "A";
-    if (score >= 70) return "B";
-    if (score >= 60) return "C";
-    if (score >= 50) return "D";
-    return "F";
-}
        
